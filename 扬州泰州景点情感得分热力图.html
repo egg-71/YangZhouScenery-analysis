@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/jiangsu.js"></script>
+
+</head>
+<body >
+    <div id="29a9b71fabee4fd395a051bd006cb097" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_29a9b71fabee4fd395a051bd006cb097 = echarts.init(
+            document.getElementById('29a9b71fabee4fd395a051bd006cb097'), 'white', {renderer: 'canvas'});
+        var option_29a9b71fabee4fd395a051bd006cb097 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "heatmap",
+            "name": "\u626c\u5dde & \u6cf0\u5dde\u666f\u70b9\u60c5\u611f\u5f97\u5206",
+            "coordinateSystem": "geo",
+            "data": [
+                {
+                    "name": "\u5927\u660e\u5bfa",
+                    "value": [
+                        119.4265,
+                        32.3972,
+                        0.847764
+                    ]
+                },
+                {
+                    "name": "\u4e1c\u5173\u8857",
+                    "value": [
+                        119.4273,
+                        32.3955,
+                        0.859501
+                    ]
+                },
+                {
+                    "name": "\u4e2a\u56ed",
+                    "value": [
+                        119.4216,
+                        32.3978,
+                        0.877837
+                    ]
+                },
+                {
+                    "name": "\u626c\u5dde\u53e4\u8fd0\u6cb3",
+                    "value": [
+                        119.4162,
+                        32.3926,
+                        0.85959
+                    ]
+                },
+                {
+                    "name": "\u4f55\u56ed",
+                    "value": [
+                        119.4204,
+                        32.3851,
+                        0.90283
+                    ]
+                },
+                {
+                    "name": "\u7626\u897f\u6e56",
+                    "value": [
+                        119.4196,
+                        32.3923,
+                        0.774611
+                    ]
+                },
+                {
+                    "name": "\u6eb1\u6e56",
+                    "value": [
+                        119.9691,
+                        32.3025,
+                        0.873117
+                    ]
+                }
+            ],
+            "pointSize": 20,
+            "blurSize": 20
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u626c\u5dde & \u6cf0\u5dde\u666f\u70b9\u60c5\u611f\u5f97\u5206"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u626c\u5dde & \u6cf0\u5dde\u666f\u70b9\u60c5\u611f\u5f97\u5206\u70ed\u529b\u56fe",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 1,
+        "text": [
+            "High",
+            "Low"
+        ],
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "horizontal",
+        "left": "center",
+        "top": "10%",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "\u6c5f\u82cf",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_29a9b71fabee4fd395a051bd006cb097.setOption(option_29a9b71fabee4fd395a051bd006cb097);
+    </script>
+</body>
+</html>
